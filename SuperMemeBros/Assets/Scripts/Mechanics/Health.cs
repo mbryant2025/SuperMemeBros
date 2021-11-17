@@ -49,6 +49,7 @@ namespace Platformer.Mechanics
         /// </summary>
         public void Die()
         {
+            gameObject.GetComponent<AudioSource>().Play();
             while (currentHP > 0) Decrement();
         }
 
