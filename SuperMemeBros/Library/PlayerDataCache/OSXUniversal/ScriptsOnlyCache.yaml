@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Platformer.Mechanics.EnemyController
     - Platformer.Mechanics.GameController
     - Platformer.Mechanics.Health
+    - Platformer.Mechanics.MLGZone
     - Platformer.Mechanics.PatrolPath
     - Platformer.Mechanics.PlayerController
     - Platformer.Mechanics.TokenController
@@ -40,6 +41,7 @@ ScriptsOnlyBuild:
     - Unity.InteractiveTutorials.SceneViewCameraMovedCriterion
     - Unity.InteractiveTutorials.Tutorial
     - Unity.InteractiveTutorials.TutorialContainer
+    - Unity.InteractiveTutorials.TutorialManager
     - Unity.InteractiveTutorials.TutorialPage
     - Unity.InteractiveTutorials.TutorialProjectSettings
     - Unity.InteractiveTutorials.TutorialStyles
@@ -181,6 +183,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5112}
     - Class: 114
       Script: {instanceID: 5212}
+    - Class: 114
+      Script: {instanceID: 63190}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1182,6 +1186,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Platformer.Mechanics
+    className: MLGZone
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
