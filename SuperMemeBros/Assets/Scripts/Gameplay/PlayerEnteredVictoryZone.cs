@@ -1,6 +1,9 @@
 using Platformer.Core;
 using Platformer.Mechanics;
 using Platformer.Model;
+using UnityEngine;
+
+
 
 namespace Platformer.Gameplay
 {
@@ -17,8 +20,13 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
-            model.player.animator.SetTrigger("victory");
-            model.player.controlEnabled = false;
+            var slider = GameObject.Find("Progress Bar").GetComponent<ProgressBar>();
+
+            if(slider.hasFoundAllMemes()) {
+                model.player.animator.SetTrigger("victory");
+                model.player.controlEnabled = false;
+            }
+
         }
     }
 }

@@ -9,6 +9,9 @@ namespace Platformer.Mechanics
     /// </summary>
     public class MLGZone : MonoBehaviour
     {
+
+        public bool beenFound = false;
+
         void OnTriggerEnter2D(Collider2D collider)
         {
             var p = collider.gameObject.GetComponent<PlayerController>();
@@ -19,6 +22,13 @@ namespace Platformer.Mechanics
 
                 //Play MLG audio
                 gameObject.GetComponent<AudioSource>().Play();
+
+                if(!beenFound) {
+                    var slider = GameObject.Find("Progress Bar").GetComponent<ProgressBar>();
+                    slider.IncrementProgress();
+                }
+
+                beenFound = true;
 
                 ev.mlgzone = this;
             }
