@@ -42,6 +42,7 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => collider2d.bounds;
 
+        int unoReverseFactor = 1;
 
         void Awake()
         {
@@ -56,7 +57,7 @@ namespace Platformer.Mechanics
         {
             if (controlEnabled)
             {
-                move.x = Input.GetAxis("Horizontal");
+                move.x = unoReverseFactor * Input.GetAxis("Horizontal");
                 if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
                     jumpState = JumpState.PrepareToJump;
                 else if (Input.GetButtonUp("Jump"))
@@ -101,6 +102,10 @@ namespace Platformer.Mechanics
                     jumpState = JumpState.Grounded;
                     break;
             }
+        }
+
+        public void UnoReverse() {
+            unoReverseFactor = -1;
         }
 
         protected override void ComputeVelocity()

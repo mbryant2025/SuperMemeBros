@@ -23,29 +23,8 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineFramingTransposer
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineVirtualCamera
-    Unity.2DPlatformer.Tutorials.dll:
-    - Unity.Tutorials.PublishCriteria
     Unity.InteractiveTutorials.Core.Scripts.dll:
     - SceneObjectGUIDComponent
-    Unity.InteractiveTutorials.Core.dll:
-    - Unity.InteractiveTutorials.ActiveToolCriterion
-    - Unity.InteractiveTutorials.AnalyticsHelper
-    - Unity.InteractiveTutorials.ArbitraryCriterion
-    - Unity.InteractiveTutorials.BuildStartedCriterion
-    - Unity.InteractiveTutorials.EditorWindowCriterion
-    - Unity.InteractiveTutorials.FrameSelectedCriterion
-    - Unity.InteractiveTutorials.FutureObjectReference
-    - Unity.InteractiveTutorials.InstantiatePrefabCriterion
-    - Unity.InteractiveTutorials.PlayModeStateCriterion
-    - Unity.InteractiveTutorials.PropertyModificationCriterion
-    - Unity.InteractiveTutorials.RequiredSelectionCriterion
-    - Unity.InteractiveTutorials.SceneViewCameraMovedCriterion
-    - Unity.InteractiveTutorials.Tutorial
-    - Unity.InteractiveTutorials.TutorialContainer
-    - Unity.InteractiveTutorials.TutorialManager
-    - Unity.InteractiveTutorials.TutorialPage
-    Unity.Platformer.Tutorials.dll:
-    - Unity.Tutorials.TutorialCallbacks
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -152,41 +131,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2806}
     - Class: 114
-      Script: {instanceID: 2848}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 3302}
+      Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 3362}
+      Script: {instanceID: 3306}
     - Class: 114
-      Script: {instanceID: 3560}
+      Script: {instanceID: 3366}
     - Class: 114
-      Script: {instanceID: 3608}
+      Script: {instanceID: 3412}
     - Class: 114
-      Script: {instanceID: 3810}
+      Script: {instanceID: 3566}
     - Class: 114
-      Script: {instanceID: 3866}
+      Script: {instanceID: 3614}
     - Class: 114
-      Script: {instanceID: 4572}
+      Script: {instanceID: 3816}
     - Class: 114
-      Script: {instanceID: 4620}
+      Script: {instanceID: 3872}
     - Class: 114
-      Script: {instanceID: 4920}
+      Script: {instanceID: 4578}
     - Class: 114
-      Script: {instanceID: 5112}
+      Script: {instanceID: 4626}
     - Class: 114
-      Script: {instanceID: 5212}
+      Script: {instanceID: 4926}
     - Class: 114
-      Script: {instanceID: 63190}
+      Script: {instanceID: 5118}
     - Class: 114
-      Script: {instanceID: 196250}
+      Script: {instanceID: 5218}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -500,6 +479,12 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
+      Hash: 459f7e39f950f284ea5c513eb30e088b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Platformer.Mechanics
+    className: MLGZone
+  - hash:
+      serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -702,6 +687,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: df65a54d96ed8251dbb8b16389fc852d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProgressBar
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -1188,18 +1179,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
-  - hash:
-      serializedVersion: 2
-      Hash: 459f7e39f950f284ea5c513eb30e088b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Platformer.Mechanics
-    className: MLGZone
-  - hash:
-      serializedVersion: 2
-      Hash: df65a54d96ed8251dbb8b16389fc852d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ProgressBar
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -10,15 +10,15 @@ public class ProgressBar : MonoBehaviour
     public float FillSpeed = 0.5f;
     private float targetProgress = 0;
 
-    const int memesToBeFound = 1;
+    const int memesToBeFound = 2;
     
     private void Awake() {
         slider = gameObject.GetComponent<Slider>();
+        slider.value = 0;
     }
 
     void Start()
     {
-        IncrementProgress();
     }
 
     // Update is called once per frame
@@ -35,6 +35,6 @@ public class ProgressBar : MonoBehaviour
     }
 
     public bool hasFoundAllMemes() {
-        return slider.value >= 1;
+        return slider.value >= 0.98f;
     }
 }
