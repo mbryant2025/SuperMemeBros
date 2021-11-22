@@ -5,7 +5,7 @@ using static Platformer.Core.Simulation;
 namespace Platformer.Mechanics
 {
     /// <summary>
-    /// Marks a trigger as a UnoReverseZone
+    /// Marks a trigger as an UnoReverseZone
     /// </summary>
     public class UnoReverseZone : MonoBehaviour
     {
