@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - Platformer.Mechanics.PlayerController
     - Platformer.Mechanics.TokenController
     - Platformer.Mechanics.TokenInstance
+    - Platformer.Mechanics.UnoReverseZone
     - Platformer.Mechanics.VictoryZone
     - Platformer.UI.MainUIController
     - Platformer.UI.MetaGameController
@@ -166,6 +167,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5118}
     - Class: 114
       Script: {instanceID: 5218}
+    - Class: 114
+      Script: {instanceID: 23700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1179,6 +1182,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
+  - hash:
+      serializedVersion: 2
+      Hash: 459f7e39f950f284ea5c513eb30e088b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Platformer.Mechanics
+    className: UnoReverseZone
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

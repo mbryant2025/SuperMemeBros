@@ -25,8 +25,8 @@ namespace Platformer.Mechanics
                     slider.IncrementProgress();
                 }
 
-                //var player = GameObject.Find("Player");
-                //player.UnoReverse();
+                var player = GameObject.Find("Player").GetComponent<PlayerController>();
+                player.UnoReverse();
 
                 beenFound = true;
 
