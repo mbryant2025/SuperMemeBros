@@ -12,6 +12,8 @@ namespace Platformer.Mechanics
 
         public bool beenFound = false;
 
+        public GameObject playerPrefab;
+
         void OnTriggerEnter2D(Collider2D collider)
         {
             var p = collider.gameObject.GetComponent<PlayerController>();
@@ -20,8 +22,7 @@ namespace Platformer.Mechanics
             {
                 var ev = Schedule<PlayerEnteredTheresAnotherZone>();
 
-                var player = GameObject.Find("player").GetComponent<Instantiate>();
-                player.TheresAnother();
+                Instantiate(playerPrefab);
 
                 if(!beenFound) {
                     var slider = GameObject.Find("Progress Bar").GetComponent<ProgressBar>();

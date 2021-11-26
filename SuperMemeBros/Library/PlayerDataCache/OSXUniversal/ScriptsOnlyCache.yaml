@@ -7,7 +7,6 @@ ScriptsOnlyBuild:
     - Platformer.Mechanics.GameController
     - Platformer.Mechanics.Health
     - Platformer.Mechanics.IAmSpeedZone
-    - Platformer.Mechanics.Instantiate
     - Platformer.Mechanics.MLGZone
     - Platformer.Mechanics.PatrolPath
     - Platformer.Mechanics.PlayerController
@@ -170,8 +169,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 62792}
     - Class: 114
       Script: {instanceID: 136268}
-    - Class: 114
-      Script: {instanceID: 141818}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1199,16 +1196,10 @@ ScriptsOnlyBuild:
     className: IAmSpeedZone
   - hash:
       serializedVersion: 2
-      Hash: 459f7e39f950f284ea5c513eb30e088b
+      Hash: 05bab2fa02a6af44273e2ca3cd79d3cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: Platformer.Mechanics
     className: TheresAnotherZone
-  - hash:
-      serializedVersion: 2
-      Hash: 83e769eee07fc231384c812eedbb8224
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Platformer.Mechanics
-    className: Instantiate
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

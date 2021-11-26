@@ -19,8 +19,7 @@ namespace Platformer.Mechanics
             if (p != null)
             {
                 var ev = Schedule<PlayerEnteredMLGZone>();
-
-                //Play MLG audio
+                
                 gameObject.GetComponent<AudioSource>().Play();
 
                 if(!beenFound) {
