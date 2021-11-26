@@ -20,13 +20,13 @@ namespace Platformer.Mechanics
             {
                 var ev = Schedule<PlayerEnteredUnoReverseZone>();
 
+                var player = GameObject.Find("Player").GetComponent<PlayerController>();
+                player.UnoReverse();
+
                 if(!beenFound) {
                     var slider = GameObject.Find("Progress Bar").GetComponent<ProgressBar>();
                     slider.IncrementProgress();
                 }
-
-                var player = GameObject.Find("Player").GetComponent<PlayerController>();
-                player.UnoReverse();
 
                 beenFound = true;
 

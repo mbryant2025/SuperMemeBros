@@ -6,7 +6,7 @@ namespace Platformer.Gameplay
 {
 
     /// <summary>
-    /// This event is triggered when the player character enters a trigger with a MLGZone component.
+    /// This event is triggered when the player character enters a trigger with an UnoReverseZone component.
     /// </summary>
     /// <typeparam name="PlayerEnteredUnoReverseZone"></typeparam>
     public class PlayerEnteredUnoReverseZone : Simulation.Event<PlayerEnteredUnoReverseZone>

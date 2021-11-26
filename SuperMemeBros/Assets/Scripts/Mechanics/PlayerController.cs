@@ -21,7 +21,7 @@ namespace Platformer.Mechanics
         /// <summary>
         /// Max horizontal speed of the player.
         /// </summary>
-        public float maxSpeed = 7;
+        public float maxSpeed = 3;
         /// <summary>
         /// Initial jump velocity at the start of a jump.
         /// </summary>
@@ -106,6 +106,10 @@ namespace Platformer.Mechanics
 
         public void UnoReverse() {
             unoReverseFactor = -1;
+        }
+
+        public void IAmSpeed() {
+            maxSpeed = 7;
         }
 
         protected override void ComputeVelocity()
