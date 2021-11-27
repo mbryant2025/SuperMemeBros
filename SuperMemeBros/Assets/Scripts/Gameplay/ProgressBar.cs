@@ -10,7 +10,7 @@ public class ProgressBar : MonoBehaviour
     public float FillSpeed = 0.5f;
     private float targetProgress = 0;
 
-    const int memesToBeFound = 3;
+    const int memesToBeFound = 4;
     
     private void Awake() {
         slider = gameObject.GetComponent<Slider>();
@@ -27,11 +27,17 @@ public class ProgressBar : MonoBehaviour
         if(slider.value < targetProgress) {
             slider.value += FillSpeed * Time.deltaTime;
         }
+
+        if(slider.value >= 0.98) {
+            var fill = GameObject.Find("Fill").GetComponent<Image>();
+            fill.color = Color.green;
+        }
+
         
     }
 
     public void IncrementProgress() {
-        targetProgress = slider.value + 1/memesToBeFound;
+        targetProgress = slider.value + 1.0f/memesToBeFound;
     }
 
     public bool hasFoundAllMemes() {

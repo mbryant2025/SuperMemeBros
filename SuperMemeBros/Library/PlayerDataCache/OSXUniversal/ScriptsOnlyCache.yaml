@@ -19,6 +19,7 @@ ScriptsOnlyBuild:
     - Platformer.UI.MetaGameController
     - Platformer.View.ParallaxLayer
     - PlayAudioClip
+    - ProgressBar
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineConfiner
@@ -53,6 +54,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -102,6 +104,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1526}
     - Class: 114
+      Script: {instanceID: 1780}
+    - Class: 114
       Script: {instanceID: 1796}
     - Class: 114
       Script: {instanceID: 1880}
@@ -145,6 +149,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3306}
     - Class: 114
       Script: {instanceID: 3366}
+    - Class: 114
+      Script: {instanceID: 3412}
     - Class: 114
       Script: {instanceID: 3566}
     - Class: 114
