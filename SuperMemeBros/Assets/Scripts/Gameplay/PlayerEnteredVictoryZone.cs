@@ -23,6 +23,9 @@ namespace Platformer.Gameplay
             if(slider.hasFoundAllMemes()) {
                 model.player.animator.SetTrigger("victory");
                 model.player.controlEnabled = false;
+            } 
+            else {
+                slider.warn();
             }
 
         }

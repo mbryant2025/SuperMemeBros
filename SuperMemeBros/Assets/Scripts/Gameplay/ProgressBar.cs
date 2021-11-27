@@ -14,6 +14,8 @@ public class ProgressBar : MonoBehaviour
     
     private void Awake() {
         slider = gameObject.GetComponent<Slider>();
+        var fill = GameObject.Find("Fill").GetComponent<Image>();
+        fill.color = new Color(0.345098f, 0.4627451f, 0.5882353f, 1.0f);
         slider.value = 0;
     }
 
@@ -31,9 +33,7 @@ public class ProgressBar : MonoBehaviour
         if(slider.value >= 0.98) {
             var fill = GameObject.Find("Fill").GetComponent<Image>();
             fill.color = Color.green;
-        }
-
-        
+        }        
     }
 
     public void IncrementProgress() {
@@ -42,5 +42,17 @@ public class ProgressBar : MonoBehaviour
 
     public bool hasFoundAllMemes() {
         return slider.value >= 0.98f;
+    }
+
+    IEnumerator waiter()
+    {
+        var fill = GameObject.Find("Fill").GetComponent<Image>();
+        fill.color = Color.red;
+        yield return new WaitForSeconds(4);
+        fill.color = new Color(0.345098f, 0.4627451f, 0.5882353f, 1.0f);
+    }
+
+    public void warn() {
+        StartCoroutine(waiter());
     }
 }
