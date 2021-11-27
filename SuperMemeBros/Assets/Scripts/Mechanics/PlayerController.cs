@@ -112,6 +112,10 @@ namespace Platformer.Mechanics
             maxSpeed = 7;
         }
 
+        public void HeadOut() {
+            velocity.x = -20;
+        }
+
         protected override void ComputeVelocity()
         {
             if (jump && IsGrounded)

@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - Platformer.Mechanics.DeathZone
     - Platformer.Mechanics.EnemyController
     - Platformer.Mechanics.GameController
+    - Platformer.Mechanics.HeadOutZone
     - Platformer.Mechanics.Health
     - Platformer.Mechanics.IAmSpeedZone
     - Platformer.Mechanics.MLGZone
@@ -175,6 +176,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 62792}
     - Class: 114
       Script: {instanceID: 136268}
+    - Class: 114
+      Script: {instanceID: 563354}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1206,6 +1209,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Platformer.Mechanics
     className: TheresAnotherZone
+  - hash:
+      serializedVersion: 2
+      Hash: 459f7e39f950f284ea5c513eb30e088b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Platformer.Mechanics
+    className: HeadOutZone
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

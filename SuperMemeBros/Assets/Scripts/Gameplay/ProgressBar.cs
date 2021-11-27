@@ -10,7 +10,7 @@ public class ProgressBar : MonoBehaviour
     public float FillSpeed = 0.5f;
     private float targetProgress = 0;
 
-    const int memesToBeFound = 4;
+    const int memesToBeFound = 5;
     
     private void Awake() {
         slider = gameObject.GetComponent<Slider>();
@@ -46,9 +46,10 @@ public class ProgressBar : MonoBehaviour
 
     IEnumerator waiter()
     {
+        gameObject.GetComponent<AudioSource>().Play();
         var fill = GameObject.Find("Fill").GetComponent<Image>();
         fill.color = Color.red;
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1);
         fill.color = new Color(0.345098f, 0.4627451f, 0.5882353f, 1.0f);
     }
 
