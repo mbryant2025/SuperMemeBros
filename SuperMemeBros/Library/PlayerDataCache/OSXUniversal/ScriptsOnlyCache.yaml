@@ -593,7 +593,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 4485ff558c0de19b5120f5cff7017e1c
+      Hash: 5ed8ec362f7d86c1ef3967f6f173cff3
     assemblyName: Assembly-CSharp.dll
     namespaceName: Platformer.Mechanics
     className: PlayerController

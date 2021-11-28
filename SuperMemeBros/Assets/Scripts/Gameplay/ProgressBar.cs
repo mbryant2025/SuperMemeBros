@@ -23,7 +23,6 @@ public class ProgressBar : MonoBehaviour
     {
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(slider.value < targetProgress) {

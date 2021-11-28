@@ -27,6 +27,8 @@ namespace Platformer.Mechanics
         /// </summary>
         public float jumpTakeOffSpeed = 7;
 
+        public bool force = false;
+
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
         /*internal new*/ public Collider2D collider2d;
@@ -55,23 +57,30 @@ namespace Platformer.Mechanics
 
         protected override void Update()
         {
-            if (controlEnabled)
-            {
-                move.x = unoReverseFactor * Input.GetAxis("Horizontal");
-                if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
-                    jumpState = JumpState.PrepareToJump;
-                else if (Input.GetButtonUp("Jump"))
+            if(!force) {
+                if (controlEnabled)
                 {
-                    stopJump = true;
-                    Schedule<PlayerStopJump>().player = this;
+                    move.x = unoReverseFactor * Input.GetAxis("Horizontal");
+                    if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
+                        jumpState = JumpState.PrepareToJump;
+                    else if (Input.GetButtonUp("Jump"))
+                    {
+                        stopJump = true;
+                        Schedule<PlayerStopJump>().player = this;
+                    }
                 }
+                else
+                {
+                    move.x = 0;
+                }
+                UpdateJumpState();
+                base.Update();
             }
-            else
-            {
-                move.x = 0;
+            else {
+                move.x = -3;
+                base.Update();
             }
-            UpdateJumpState();
-            base.Update();
+            
         }
 
         void UpdateJumpState()
@@ -113,8 +122,18 @@ namespace Platformer.Mechanics
         }
 
         public void HeadOut() {
-            velocity.x = -20;
+            StartCoroutine(autoMove());
         }
+
+
+        IEnumerator autoMove() {
+            model.player.controlEnabled = false;
+            force = true;
+            yield return new WaitForSeconds(2);
+            model.player.controlEnabled = true;
+            force = false;
+        }
+
 
         protected override void ComputeVelocity()
         {
