@@ -10,7 +10,7 @@ public class ProgressBar : MonoBehaviour
     public float FillSpeed = 0.5f;
     private float targetProgress = 0;
 
-    const int memesToBeFound = 5;
+    const int memesToBeFound = 6;
     
     private void Awake() {
         slider = gameObject.GetComponent<Slider>();

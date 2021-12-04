@@ -22,6 +22,7 @@ namespace Platformer.Gameplay
 
             if(slider.hasFoundAllMemes()) {
                 model.player.animator.SetTrigger("victory");
+                //gameObject.GetComponent<AudioSource>().Play();
                 model.player.controlEnabled = false;
             } 
             else {

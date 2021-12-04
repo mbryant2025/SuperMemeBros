@@ -5,7 +5,7 @@ using static Platformer.Core.Simulation;
 namespace Platformer.Mechanics
 {
     /// <summary>
-    /// Marks a trigger as a TheresAnotherZone
+    /// Marks a trigger as a HeadOutZone
     /// </summary>
     public class HeadOutZone : MonoBehaviour
     {
