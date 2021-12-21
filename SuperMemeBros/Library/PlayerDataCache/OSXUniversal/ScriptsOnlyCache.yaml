@@ -162,25 +162,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3424}
     - Class: 114
-      Script: {instanceID: 3578}
+      Script: {instanceID: 3426}
     - Class: 114
-      Script: {instanceID: 3626}
+      Script: {instanceID: 3580}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3830}
     - Class: 114
-      Script: {instanceID: 4594}
+      Script: {instanceID: 3886}
     - Class: 114
-      Script: {instanceID: 4642}
+      Script: {instanceID: 4596}
     - Class: 114
-      Script: {instanceID: 4942}
+      Script: {instanceID: 4644}
     - Class: 114
-      Script: {instanceID: 5134}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 5234}
+      Script: {instanceID: 5138}
     - Class: 114
-      Script: {instanceID: 30040}
+      Script: {instanceID: 5238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -734,6 +734,12 @@ ScriptsOnlyBuild:
     className: ProgressBar
   - hash:
       serializedVersion: 2
+      Hash: 66cb219e4ea34b9d7d9fe7e676ffcfb5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Platformer.Mechanics
+    className: PeaceOutZone
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1218,12 +1224,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
-  - hash:
-      serializedVersion: 2
-      Hash: 459f7e39f950f284ea5c513eb30e088b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Platformer.Mechanics
-    className: PeaceOutZone
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

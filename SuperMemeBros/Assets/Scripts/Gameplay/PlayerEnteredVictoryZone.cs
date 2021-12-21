@@ -22,8 +22,10 @@ namespace Platformer.Gameplay
 
             if(slider.hasFoundAllMemes()) {
                 model.player.animator.SetTrigger("victory");
-                //gameObject.GetComponent<AudioSource>().Play();
+                GameObject.Find("Victory").GetComponent<AudioSource>().Play();
                 model.player.controlEnabled = false;
+                GameObject.Find("Player").GetComponent<Timer>().stop();
+                GameObject.Find("VictoryZoneTrigger").GetComponent<VictoryZoneTrigger>().loadWinScreen();
             } 
             else {
                 slider.warn();
